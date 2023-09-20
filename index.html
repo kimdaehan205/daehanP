@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="innerbox">
+            <div class="top_logo">
+                <h1><a href="#">한국렌탈</a></h1>
+            </div>
+            <div class="top_nav desk tablet">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">견적문의</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+            </div>
+            <div class="tablet m right_box">
+                <div class="m top_nav_t">
+                    <a href="#">로그인</a>
+                </div>
+                <button class="hide tablet m" type="button">
+                    <div id="menu_wrap">
+                        <ul>
+                            <li><a href="#">IT 기기</a>
+                                <ul>
+                                    <li><a href="#">노트북</a></li>
+                                    <li><a href="#">모니터</a></li>
+                                    <li><a href="#">데스크탑</a></li>
+                                    <li><a href="#">사무기기</a></li>
+                                    <li><a href="#">환경가전</a></li>
+                                    <li><a href="#">태블릿</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">안전건설장비</a>
+                                <ul>
+                                    <li><a href="#">수직형 고소작업대</a></li>
+                                    <li><a href="#">직진형 고소작업대</a></li>
+                                    <li><a href="#">굴절형 고소작업대</a></li>
+                                    <li><a href="#">기타 고소작업대</a></li>
+                                    <li><a href="#">안전용품 및 부품</a></li>
+                                    <li><a href="#">안전 교육프로그램</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">계측기기</a>
+                                <ul>
+                                    <li><a href="#">RF</a></li>
+                                    <li><a href="#">전자 측정 분석기</a></li>
+                                    <li><a href="#">열화상카메라</a></li>
+                                    <li><a href="#">기타</a></li>
+                                    <li><a href="#">교정센터</a></li>
+                                    <li><a href="#">자동화 솔루션</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">로보틱스</a>
+                                <ul>
+                                    <li><a href="#">서빙 및 배송로봇</a></li>
+                                    <li><a href="#">안내로봇</a></li>
+                                    <li><a href="#">방역 및 물류로봇</a></li>
+                                    <li><a href="#">웨어러블 및 재활로봇</a></li>
+                                    <li><a href="#">제조로봇</a></li>
+                                    <li><a href="#">푸드테크</a></li>
+                                    <li><a href="#">스마트 매장 솔루션</a></li>
+                                    <li><a href="#">로못 초특가 프로모션</a></li>
+                                </ul>
+                            <li><a href="#">오피스 솔루션</a>
+                                <ul>
+                                    <li><a href="#">스마트 오피스 솔루션</a></li>
+                                    <li><a href="#">공유오피스</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <nav class="desktop_box desk">
+            <ul>
+                <li class="hoverS">
+                    <a href="#">IT기기</a>
+                    <div class="sub">
+                        <div class="flex_center" id="what">
+                            <!-- 센터 -->
+                            <!--hover시 보이는 영역 -->
+                            <div class="pic">
+                                <img src="img/nav/IT 1.jpg" alt="IT노트북 이미지"> <!--사진 -->
+                                <img src="img/icon/Line 7.png" alt="">
+                            </div>
+                            <div class="sub_innerbox">
+                                <ul>
+                                    <li>
+                                        <a href="#">노트북</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">SAMSUNG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HP</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">APPLE</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">ASUS</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">모니터</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">SAMSUNG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LENOVO</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">데스크탑</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">SAMSUNG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LENOVO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HP</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">사무기기</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">프린터</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">문서 세단기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">전자 칠판</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HP 특별 기획전</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">환경 가전</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">환기 청정기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">스마트 에어콕</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">태블릿</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">SAMSUNG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">APPLE</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">기타</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">기타</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">서버</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">보안 솔루션</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">데이터 삭제 솔루션</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">자산관리 솔루션</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="hoverS">
+                    <a href="#">안전건설장비</a>
+                    <div class="sub">
+                        <div class="flex_center">
+                            <div class="pic">
+                                <img src="img/nav/construct.jpg" alt="고소 작업대 이미지"> <!--사진 -->
+                                <img src="img/icon/Line 7.png" alt="">
+                            </div>
+                            <div class="sub_innerbox">
+                                <ul>
+                                    <li>
+                                        <a href="#">수직형 고소작업대</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">~6.5m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~8m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~10m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~12m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~14m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~18m</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">직진형 고소작업대</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">~22m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~28m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~34m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~43m</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">굴절형 고소작업대</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">~16m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~20m</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">~26m</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">기타 고소작업대</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Z형</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">실내형</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">파레트 트럭</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">안전용품 및 부품</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">부품</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">안전용품</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">에어백 안전 조끼</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">안전 교육프로그램</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">근골격계 유해요인 맞춤 솔루션</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="hoverS">
+                    <a href="#">계측기기</a>
+                    <div class="sub">
+                        <div class="flex_center">
+                            <div class="pic">
+                                <img src="img/nav/measure.jpg" alt="IT노트북 이미지"> <!--사진 -->
+                                <img src="img/icon/Line 7.png" alt="">
+                            </div>
+                            <div class="sub_innerbox">
+                                <ul>
+                                    <li>
+                                        <a href="#">RF</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Spectrum Analyzer</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Network Analyzer</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">RF Communication</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">RF Power Meter & Sensor</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Signal Generator</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">RF 주변기기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Noise Figure 관련</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">전자 측정 분석기</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">전압, 전류, 저항 측정기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">전원 분석기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Oscilloscope</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Oscilloscope 주변기기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Power Supply</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">열화상카메라</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">T Series</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">기타</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">기타</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">기록 장치</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">환경관련 기기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">회로소자 측정기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">EMI & EMS 관련기기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">GPIB 관련</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">광 & 유선통신 관련</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">유해물질분석기/도금두께측정기</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">교정센터</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">교정센터 소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">교정성적서 진위 확인</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">자동화 솔루션</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">ICS 자동화</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Customizing SW</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Customizing HW</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="hoverS">
+                    <a href="#">로보틱스</a>
+                    <div class="sub">
+                        <div class="flex_center">
+                            <div class="pic">
+                                <!--hover시 보이는 영역 -->
+                                <img src="img/nav/robot.jpg" alt="IT노트북 이미지"> <!--사진 -->
+                                <img src="img/icon/Line 7.png" alt="">
+                            </div>
+                            <div class="sub_innerbox">
+                                <ul>
+                                    <li>
+                                        <a href="#">서빙 및 배송로봇</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">LG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">브이디컴퍼니</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">로보와이드</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">배민로봇(비로보틱스)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">폴라리스3D</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">안내로봇</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">LG</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">TEMI</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">방역 및 물류로봇</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Geek+</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Marorobot</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">UBTECH</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">웨어러블 및 재활로봇</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Ekso</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">FRT</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">ATOUN</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HYUNDAI Rotem</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HeroWear</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">ANGEL ROBOTICS</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">제조로봇</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">KAWASAKI</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NEUROMEKA</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">RAINBOW ROBOTICS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">EPSON</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">UNIVERSAL ROBOTS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Multi Feeder</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">푸드테크</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Aniai</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Folletto Robotics</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">MANDARIN ROBOTICS</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">스마트 매장 솔루션</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">페이스원</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">키오스크</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">포스기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">테이블오더</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">로봇 초특가 프로모션</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">LG One RE:START20</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LG One RE:START169</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LG 2세대 SMILE27</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">LG 2세대 SMILE23</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">로보와이드 세그웨이 로봇</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">폴라리스 이리온</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="hoverS">
+                    <a href="#">오피스 솔루션</a>
+                    <div class="sub">
+                        <div class="flex_center">
+                            <div class="pic">
+                                <!--hover시 보이는 영역 -->
+                                <img src="img/nav/office.jpg" alt="IT노트북 이미지"> <!--사진 -->
+                                <img src="img/icon/Line 7.png" alt="">
+                            </div>
+                            <div class="sub_innerbox">
+                                <ul>
+                                    <li>
+                                        <a href="#">스마트 오피스 솔루션</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">OFFICEKIT</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Network Analyzer</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">RF Communication</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">RF Power Meter & Sensor</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Signal Generator</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">RF 주변기기</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">공유오피스</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">VISIONPORT</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">핫데스크</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">프라이빗 오피스</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">코워킹 스페이스</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Power Supply</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">기타</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">자산관리 솔루션</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">엔젤 프로그램</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">보안 솔루션</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">데이터 삭제 솔루션</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li>
+                    <a href="#">고객 상담</a>
+                    <div class="sub">
+                        <div class="flex_center">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">이벤트</a>
+                    <div class="sub">
+                        <div class="flex_center">
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </nav>
+        <div class="bg"></div>
+    </header>
+
+    <section class="slide_banner">
+        <div class="innerbox1">
+            <!-- 셋 중 하나만 block, 나머지 hide -->
+            <div class="banner_desk desk">
+                <a href="#" class="1"><img src="img/banner/desktop1.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/desktop2.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/desktop3.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/desktop4.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/desktop5.jpg" alt=""></a>
+            </div>
+            <div class="banner_tablet tablet">
+                <a href="#" class="1"><img src="img/banner/tablet1.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/tablet2.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/tablet3.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/tablet4.jpg" alt=""></a>
+                <a href="#"><img src="img/banner/tablet5.jpg" alt=""></a>
+            </div>
+            <div class="banner_mobile m">
+                <a href="#" class="1"><img src="img/banner/mobile1.png" alt=""></a>
+                <a href="#"><img src="img/banner/mobile2.png" alt=""></a>
+                <a href="#"><img src="img/banner/mobile3.png" alt=""></a>
+                <a href="#"><img src="img/banner/mobile4.png" alt=""></a>
+                <a href="#"><img src="img/banner/mobile5.png" alt=""></a>
+            </div>
+            <div class="btns">
+                <!-- 클릭이벤트 걸면 됄듯 -->
+                <button>
+                    <img src="img/icon/arrow_left.png" alt="" id="left">
+                </button>
+                <span id="spans">1/5</span> <!-- innerText로 로 값바꿔주면 될듯?  -->
+                <button>
+                    <img src="img/icon/arrow_right.png" alt="" id="right">
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="block_after"></div>
+    <section class="rotate_product dsek tablet">
+        <div class="text">
+            <h2>제품 추천</h2>
+            <p>회사에 맞는 <span>제품을</span> 찾아 보세요.</p>
+        </div>
+        <div class="product_box">
+            <!-- 나 여기서 궁금한게 img도 하위구조로 만드는게 맞나? -->
+            <!-- 자바로 클릭시 나오게 하는것보단 편할것 같기도 -->
+            <!-- 일단 만들자 수정하면 되니까 -->
+            <div class="pro_menu">
+                <ul>
+                    <li class="a">IT 기기</li>
+                    <li>안전/건설장비</li>
+                    <li>계측 기기</li>
+                    <li>로보틱스</li>
+                    <li class="a5">오피스 솔루션</li>
+                </ul>
+            </div>
+            <ul class="ul_wrap">
+                <li>
+                    <!-- a안줄꺼 click 이벤트로 하위요소 나오는거 줄꺼 -->
+                    <ul>
+                        <li><a href="#"><img src="img/middle/1_1.png" alt=""><span>드림 자산관리ITAM</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_2.png" alt=""><span>보안 솔루션</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_3.png" alt=""><span>데이터 삭제 솔루션</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_4.png" alt=""><span>아이패드 에어5세대</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_5.png" alt=""><span>삼성전자 데스크탑</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_6.png" alt=""><span>LG 게이밍 울트라 i7</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_7.png" alt=""><span>삼성 갤럭시탭s7 FE</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_8.png" alt=""><span>HP 800 G8</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_9.png" alt=""><span>엘지저자 LG그램15</span></a></li>
+                        <li><a href="#"><img src="img/middle/1_10.png" alt=""><span>ASUS ExpertBook B1500</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#"><img src="img/middle/2_1.png" alt=""><span>OPUS3.0</span></a></li>
+                        <li><a href="#"><img src="img/middle/2_2.png" alt=""><span>JLG-1350SJP</span></a></li>
+                        <li><a href="#"><img src="img/middle/2_3.png" alt=""><span>S-125</span></a></li>
+                        <li><a href="#"><img src="img/middle/2_4.png" alt=""><span>JLG-4069</span></a></li>
+                        <li><a href="#"><img src="img/middle/2_5.png" alt=""><span>JLG-2646</span></a></li>
+                        <li><a href="#"><img src="img/middle/2_6.png" alt=""><span>SJ-4626</span></a></li>
+                        <li><a href="#"><img src="img/middle/2_7.png" alt=""><span>협착방지장치 Set</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#"><img src="img/middle/3_1.png" alt=""><span>Testo 890</span></a></li>
+                        <li><a href="#"><img src="img/middle/3_2.png" alt=""><span>PIM ANALYZER</span></a></li>
+                        <li><a href="#"><img src="img/middle/3_3.png" alt=""><span>iEDX-200AT</span></a></li>
+                        <li><a href="#"><img src="img/middle/3_4.png" alt=""><span>NL32</span></a></li>
+                        <li><a href="#"><img src="img/middle/3_5.png" alt=""><span>N8973A</span></a></li>
+                        <li><a href="#"><img src="img/middle/3_6.png" alt=""><span>MS9710C</span></a></li>
+                        <li><a href="#"><img src="img/middle/3_7.png" alt=""><span>ZCAN</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#"><img src="img/middle/4_1.png" alt=""><span>Wearable Robot</span></a></li>
+                        <li><a href="#"><img src="img/middle/4_2.png" alt=""><span>EVO</span></a></li>
+                        <li><a href="#"><img src="img/middle/4_3.png" alt=""><span>Adela</span></a></li>
+                        <li><a href="#"><img src="img/middle/4_4.png" alt=""><span>Adibot</span></a></li>
+                        <li><a href="#"><img src="img/middle/4_5.png" alt=""><span>BellaBot(벨라봇)</span></a></li>
+                        <li><a href="#"><img src="img/middle/4_6.png" alt=""><span>LG CLOi안내로봇</span></a></li>
+                        <li><a href="#"><img src="img/middle/4_7.png" alt=""><span>페이스원 프리미엄</span></a></li>
+                        <li><a href="#"><img src="img/middle/4_8.jpg" alt=""><span>LG CLOi배송로봇</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#"><img src="img/middle/5_1.jpg" alt=""><span>OFFICEKIT</span></a></li>
+                        <!-- 임시 사진 5개 구하셈 -->
+                        <li><a href="#"><img src="img/middle/5_2.jpg" alt=""><span>프라이빗 오피스</span></a></li>
+                        <li><a href="#"><img src="img/middle/5_3.jpg" alt=""><span>핫데스크</span></a></li>
+                        <li><a href="#"><img src="img/middle/5_4.jpg" alt=""><span>개방형 라운지</span></a></li>
+                        <li><a href="#"><img src="img/middle/5_5.png" alt=""><span>코워킹 스페이스</span></a></li>
+                        <li><a href="#"><img src="img/middle/5_6.jpg" alt=""><span>사무형 회의실</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="btns2">
+                <!-- 클릭이벤트 걸면 됄듯 -->
+                <img src="img/icon/arrow_left.png" alt="" class="btns_left">
+                <img src="img/icon/arrow_right.png" alt="" class="btns_right">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="rotate_product_m"><!--mobile 대체 page  -->
+        <div class="text">
+            <p>회사에 맞는<span> 제품을 </span>찾아 보세요.</p>
+        </div>
+        <div class="rotate_wrap">
+            <a>
+                <div><img src="img/icon/m_IT.png" alt=""><span>IT기기</span></div>
+                <img src="img/icon/ep_arrow-up.png" alt="">
+            </a>
+            <a>
+                <div><img src="img/icon/m_safety.png" alt=""><span>안전/건설장비</span></div>
+                <img src="img/icon/ep_arrow-up.png" alt="">
+            </a>
+            <a>
+                <div><img src="img/icon/m_measure.png" alt=""><span>계측기기</span></div>
+                <img src="img/icon/ep_arrow-up.png" alt="">
+            </a>
+            <a>
+                <div><img src="img/icon/m_group.png" alt=""><span>로보틱스</span></div>
+                <img src="img/icon/ep_arrow-up.png" alt="">
+            </a>
+            <a>
+                <div><img src="img/icon/m_solution.png" alt=""><span>솔루션</span></div>
+                <img src="img/icon/ep_arrow-up.png" alt="">
+            </a>
+        </div>
+    </section>
+    <div class="block_after"></div>
+    <section class="slide_flow">
+        <div class="text_wrap">
+            <h2>업종별 제품추천</h2>
+            <p>5000개<br>기업들의 선택<br>한국렌탈</p>
+            <p>교육&학원 - 병원&제약 - 제조&건설<br>
+                건물시설관리 - MICE산업에 대한 모든 서비스를 제공합니다.</p>
+        </div>
+        <div id="horizontal" class="img_wrap">
+            <!-- hover 시 사진 커지는효과, click시 이동으로 하자 -->
+            <a href="#" class="one one_line gsap"><img src="img/slide/1.jpg" alt=""><span>건설</span></a>
+            <a href="#" class="one_line gsap"><img src="img/slide/2.jpg" alt=""><span>시설관리</span></a>
+            <a href="#" class="one_line gsap"><img src="img/slide/3.jpg" alt=""><span>F&B</span></a>
+            <a href="#" class="four gsap"><img src="img/slide/4.jpg" alt=""><span>학원</span></a>
+            <a href="#" class="gsap"><img src="img/slide/5.jpg" alt=""><span>병원&제약</span></a>
+            <a href="#" class="gsap"><img src="img/slide/6.jpg" alt=""><span>박람회</span></a>
+        </div>
+    </section>
+    <div class="block_after slide_end"></div>
+    <section class="more_info">
+        <div class="text">
+            <h2>한국렌탈 가이드</h2>
+            <p>렌탈에 대한<span> 정보를 </span>찾아 보세요.</p>
+        </div>
+        <div class="info_box">
+            <div class="info_box1">
+                <a href="#">
+                    <!-- 이거 이미지 파일 크기 조정 될텐데 img 넣는게 맞나? 
+                        배경그림이 낫나?
+                        근데 둘다 될듯 그냥 이미지 하자
+                    -->
+                    <img src="img/icon/bot1.png" alt="">
+                    <div>렌탈 가이드</div>
+                    <p class="desk tablet">체계적인 고객관리와 철저하고
+                        신속한 애프터 서비스</p>
+                </a>
+            </div>
+            <div class="info_box1">
+                <a href="#">
+                    <img src="img/icon/bot2.png" alt="">
+                    <div>견적&문의</div>
+                    <p class="desk tablet">한국렌탈은 매순간 고객을 최우선 가치로삼고 신속하게 대응합니다.
+                    </p>
+                </a>
+            </div>
+            <div class="info_box1">
+                <a href="#">
+                    <img src="img/icon/bot3.png" alt="">
+                    <div>자주하는 질문</div>
+                    <p class="desk tablet">한국렌탈에 자주 하는 질문과
+                        그에 대한 답변을 살펴보세요.</p>
+                </a>
+            </div>
+            <div class="info_box1">
+                <a href="#">
+                    <img src="img/icon/bot4.png" alt="">
+                    <div>메뉴얼 다운로드</div>
+                    <p class="desk tablet">제품&서비스 기능에 대한
+                        사용자 메뉴얼 다운로드</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="fix tablet desk">
+        <!-- 부모에 fix 쓰고 자식에 absolute써도 되낭?
+        margin으로 할수도 있긴한디
+        -->
+        <a href="#"><img src="img/icon/fixed_chat.png" alt="" class="chat desk tablet"></a>
+        <!-- div에 배경색 파랑색 깔아주시고 -->
+        <a href="#">
+            <div class="consult">
+                <span>기업렌탈</span>
+                <span class="span1">상담 1:1 채팅</span>
+            </div>
+        </a>
+        <a href="#">
+            <div class="consult2">
+                <img src="img/icon/fixed_write.png" alt="">
+                <span>견적문의</span>
+            </div>
+        </a>
+        <a href="#" class="up"><img src="img/icon/arrow-up-thin.svg" alt=""></a>
+    </section>
+    <section class="fix_m m">
+        <div class="fix_m_wrap">
+            <a class="left aa">
+                <img src="img/icon/fixed_chat_m.png" alt="">
+                <div>상담 1:1채팅</div>
+            </a>
+            <a class="right aa">
+                <img src="img/icon/fixed_write.png" alt="">
+                <div>견적문의</div>
+            </a>
+            <div class="up"><a href="#"><img src="img/icon/up.png" alt=""></a></div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- <div class="footer_bg">
+
+        </div> -->
+        <!-- 배경그림 footer 검색깔면 안되는군 bg에 검은색 깔아 줍시당-->
+        <div class="footer_wrap">
+            <div class="footer_left">
+                <div class="footer_top">
+                    <div>
+                        <img src="img/icon/logo_ft 1.png" alt="">
+                    </div>
+                    <div class="footer_phone">
+                        <p>고객센터
+                            <span>1899-3945</span>
+                        </p>
+                        <img src="img/icon/footer_call.png" alt="" class="desk tablet">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <address>
+                        <p>서울특별시 성동구 연무장11길 10, 우리큐브빌딩 3층<br>
+                            COPYRIGHT ©2023 한국렌탈 ALL RIGHTS RESERVED</p>
+                        <p>개인정보처리방침 | 사업제휴</p>
+                    </address>
+                </div>
+
+            </div>
+            <div class="footer_right desk">
+                <a href="#"><img src="img/icon/footer_bloglovin.png" alt=""></a>
+                <a href="#"><img src="img/icon/footer_instagram.png" alt=""></a>
+                <a href="#"><img src="img/icon/footer_facebook.png" alt=""></a>
+                <a href="#"><img src="img/icon/footer_youtube.png" alt=""></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

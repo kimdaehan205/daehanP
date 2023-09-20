@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body, header, nav, main, footer, section, div, ul,li,p,aside, article, address, h1,h2,h3,h4,h5,h6, form, fieldset, legend, table, tbody, th,td, ol, dl, dt,dd,input, button, select, option, textarea, figure, figcaption, caption, blockquote{ margin: 0; padding: 0;}
+a{text-decoration: none;}
+ol, ul{list-style: none;}
+img{display: block; border: 0px;}
+address, em, i{font-style: normal;}
+button, fieldset, select, input{border: 0px;}
+legend, caption, hr{display: none;}
+table{border-collapse: collapse; border-spacing: 0px;}
+
+
+

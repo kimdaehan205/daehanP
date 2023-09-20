@@ -1,0 +1,1737 @@
+@import "default_kim.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body{
+    font-size: 16px;
+    color: #111;
+}   
+/* desktop  @header*/
+
+/* #horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 500vw;
+}
+#horizontal > .gsap {
+    width: 100vw;
+} */
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.tablet, .m{
+    display: none;
+}
+.desk{
+    display: block
+}
+
+header{
+    max-width: 1440px; 
+    width: 100%;
+    /* 반응형 하려면 이렇게 해야하는듯? */
+    margin: auto;
+    height: 120px;
+    padding-top:8px;
+    background: #fff;
+}
+header> .innerbox{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+header>.innerbox>.top_logo{
+    width: 178px;
+    height: 48px;
+}
+header>.innerbox>.top_logo>h1>a{
+    display: block;
+    text-indent: -9999em;
+    /* 글자 왜 안날라감? -해결 block요소여야지만 */
+    background: url(../img/icon/header_logo.png) no-repeat;
+    background-size: contain;
+}
+header>.innerbox>.top_nav{
+    width: 400px;
+    height: 19px;
+    margin-top: 21px;
+    /* margin-right: 40px; */
+}
+header>.innerbox>.top_nav>ul{
+    display: inline-flex;
+    /* inline-flex로 하면 빈공간 안먹음 */
+    /* flex-flow: row wrap;  F5누르면 바뀜 아ㅏㅏㅏㅏㅏ*/
+}
+header>.innerbox>.top_nav>ul>li{
+    padding-left: 8px;
+    padding-right: 8px;
+    border-left: 1px solid #999;
+}
+header>.innerbox>.top_nav>ul>li:first-of-type{
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border-left: none;
+}
+
+/* button없음 */
+
+
+
+
+/* 배너 스륵 아래 부분 */
+.desktop_box{
+    width: 100%;
+    height: 40px;
+}
+.desktop_box>ul{
+    width: 100%;
+    height: 40px;
+    padding-top: 16px;
+    box-sizing: border-box;
+    /* 바닥으로부터 24px */
+    display: flex;
+    flex-flow: row wrap;
+    /* gap: 20px; */
+    position: relative;
+}
+/* 배경그림 */
+header>.bg{ 
+    width: calc(100vw - 18px);
+    /* width: calc();
+        Q1 : 막대기바 뺀거 계산식좀
+    */
+    height: 500px;
+    position:absolute;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+    background: #fff; 
+    box-shadow: 6px 3px 3px #babecc;
+    display: none;
+    /* 이거 윗방향 없애고 싶은데 -해결
+    box-shadow: 세로로 내려와. 가로로. 번짐. 흐림.
+    */
+    
+}
+
+.desktop_box>ul>li{
+    z-index: 10;
+    padding: 0px 10px;
+}
+.desktop_box>ul>li>a{
+    z-index: 10;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* 얘가 그림들은곳 */
+.desktop_box>ul>li>.sub{
+    max-width: 1440px;
+    width: 100vw; /*결국은 넓이가 가변되야돼 아 간단하네;*/
+    position: absolute;
+    top: 0px;
+    left: 0; 
+    /* padding-top: 60px; */
+    margin-top: 40px;
+    z-index: -5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* z-index개념이 잘 모르겠음 */
+
+    /* background: #999; */
+}
+.desktop_box>ul>li>.sub>.flex_center{
+    max-width: 1440px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    margin-top: 67px;
+    /* background: #acd; */
+}
+.desktop_box>ul>li:hover>.sub{
+    /* display:flex;  @111호버   */
+}
+
+/* hover 영역 호버 싹 지우고 
+자바스크립트 or 제이쿼리로 mouseenter, leave로 하는게 맞아
+hover로하니까 쌓인다. 호버 다지울께
+
+none으로 해놓고 다지움
+
+
+
+*/
+.desktop_box>ul>li:hover>.sub>.flex_center{
+
+}
+/* header>.desktop_box:hover+.bg{
+    display: block;  @222호버
+} */
+.desktop_box>ul>li>.sub>.flex_center>.pic{
+    max-width: 427px;
+    width: 40%;
+    height: 260px;
+    position: relative;
+}
+.desktop_box>ul>li>.sub>.flex_center>.pic>img:nth-of-type(1){
+    margin: 0 33px 0 0;
+    width: 392px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Q1 임마가 튕김  해결:absolute로 띄움 */
+.desktop_box>ul>li>.sub>.flex_center>.pic>img:nth-of-type(2){
+    margin-top: 65px;
+    position: absolute;
+    top: 0;
+    left: 427px;
+    /* 이었다가 1100쯤에 -33px해주면 될거같은데? */
+}
+/* Q1 관련해서 자리 조정을 못하겠어 그리고 왼쪽 정렬 후 오른쪽에서 줄었으면 하는데 */
+/* 67px */
+.desktop_box>ul>li>.sub>.flex_center>.sub_innerbox{
+    margin-top: 35px;
+    margin-left: 35px;
+    max-width: 1013px;
+    width: 59%;
+}
+.desktop_box>ul>li>.sub>.flex_center>.sub_innerbox>ul{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1000px;
+    width: 100%;
+}
+/* 좀 줄입시다 */
+.sub_innerbox>ul>li{
+    width: 25%; /*214.75px  */
+    height: 60%;
+}
+.sub_innerbox>ul>li>a{
+    font-size: 18px;
+    font-weight: bold;
+}
+.sub_innerbox>ul>li>ul{
+
+}
+.sub_innerbox>ul>li>ul a{
+    font-size: 15px;
+    /* height: 18px;
+    padding-bottom: 12px; */
+    
+
+}
+/* 슬라이드  @slide */
+
+.slide_banner {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: 630px;
+    margin: 0 auto;
+}
+
+.slide_banner > .innerbox1 {
+    position: relative;
+    max-width: 1440px;
+    height: 630px;
+    overflow: hidden;
+}
+
+.slide_banner > .innerbox1 > .banner_desk {
+    width: calc(1440px * 5);
+    height: 630px;
+    display: flex;
+}
+
+.slide_banner > .innerbox1 > .banner_desk > a{
+    max-width: 1440px;
+    width: 100%;
+}
+.slide_banner > .innerbox1 > .banner_desk > a > img {
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.slide_banner>.innerbox1 .btns button{
+    background: transparent;
+    /* background: none; */
+}
+
+.slide_banner>.innerbox1 .btns{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.slide_banner>.innerbox1 .btns span{
+    font-size: 32px;
+}
+.block_after{
+    display:block;  width:1920px;  height:1px;  background:#e4e4e4;
+    margin: 50px auto;
+}
+
+
+/* @rotate */
+
+.rotate_product{
+    max-width: 1440px;
+    width: 100%;
+    height: 530px;
+    margin: 94px auto 0;
+/* 하위요소 중앙정렬 하는법*/
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}   
+
+/* 텍스트 부분 */
+
+/* @more_info 같이하게 .rotate_product > */.text{
+    display: inline-flex;
+    flex-flow: column;
+    /* 535px 왜 안댐? */
+    height: 124px; 
+}
+.text>h2{
+    font-size: 28px;
+    color: #1F2D5F;
+    text-align: center;
+}
+.text>p{
+    margin:13px auto 0;
+    font-size: 40px;
+    color: #090909;
+}
+.text>p>span{
+    color: #0469CD;
+    font-weight: bold;
+}
+/*  */
+
+
+.rotate_product>.product_box{
+    max-width: 1380px;
+    width: 100%;
+    height: 273px;
+    margin-top: 85px;
+}
+
+.rotate_product>.product_box>ul{
+    max-width: 1380px;
+    width: 100%;
+    height: 229px;
+    display: flex;
+}
+.rotate_product>.product_box>ul>li:not(:nth-child(1)){
+    display: none;
+    /* 임시 @스크립트로 */
+}
+
+
+.rotate_product>.product_box>ul>li{
+    max-width: 1212px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* pro_menu부분 */
+.rotate_product>.product_box>.pro_menu{
+    width: 550px;
+    height: 22px;
+    margin-left: 102px;
+    margin-bottom: 17px;
+}
+.rotate_product>.product_box>.pro_menu>ul{
+    display: inline-flex;
+    gap: 10px;
+}
+.rotate_product>.product_box>.pro_menu>ul>li{
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.rotate_product>.product_box>.pro_menu>ul>li:nth-of-type(1){
+    border-left: 0 none;
+}
+
+.rotate_product>.product_box>.pro_menu>ul>li:hover::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1px;
+    background: #999;
+    margin: 1px auto;
+}
+
+
+/* @문제 너무 길어   */
+
+
+/* ul 난이걸 중앙정렬하고싶음  flex를 유지하면서 했음 */
+.rotate_product>.product_box>ul>li>ul{
+    display: flex;
+    width: 2000px;
+}
+.rotate_product>.product_box>ul>li>ul>li{
+    width: 225px; 
+    height: 229px;
+    margin-right: 18px;
+
+}
+.rotate_product>.product_box>ul>li>ul>li>a>img{
+    width: 225px;
+    height: 206px;
+}
+.rotate_product>.product_box>ul>li>ul>li>a>span{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+/* 버튼 */
+.rotate_product>.product_box>.btns2{
+    max-width: 1380px;
+    width: 98vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(-136.5px);
+}
+
+
+
+.rotate_product_m{
+    display: none;
+}
+/* @slide_flow */
+.slide_flow{
+    /* 지울꺼 */
+    position: relative;
+    transition: left 1s ease-in-out ;
+
+
+    margin: 104px auto 0;
+    width: 3208px;
+    height: 920px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+.slide_flow>.text_wrap{
+    margin: 223px 0 0 37px;
+    width: 611px;
+    height: 388px;
+    position: relative;
+}
+.slide_flow>.text_wrap>h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: 111;
+}
+.slide_flow>.text_wrap>p:nth-of-type(1){
+    margin-top: 10px ;
+    font-size: 64px;
+    color: #0469CD;
+}
+.slide_flow>.text_wrap>p:nth-of-type(2){
+    margin-top: 50px;
+    font-size: 24px;
+    color: 111;
+}
+
+
+.slide_flow>.img_wrap{
+        /* 지울꺼 */
+        position: relative;
+        transition: left 1s ease-in-out ;
+
+    width: 3200px;
+    height: 832px;
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+.slide_flow>.img_wrap>a{
+    height: 400px;
+    width: 600px;
+    position: relative;
+    /* margin: 100px 0 0 200px; */
+
+}
+/* .slide_flow>.img_wrap>.one_line{
+    margin: 0 0 0 200px;
+}
+.slide_flow>.img_wrap>.one{
+    margin: 0 0 0 0px;
+}
+.slide_flow>.img_wrap>.four{
+    margin: 100px 0 0 400px;
+} */
+
+.slide_flow>.img_wrap>img{
+    height: 400px;
+    width: 600px;
+}
+
+.slide_flow>.img_wrap>a>span{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+    z-index: 10;
+
+}
+
+
+
+/* @more_info 부터...합시다 */
+.more_info{
+    max-width: 1320px;
+    width: calc(100%);
+    height: 405px;
+    margin: 108px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* more_info 같이하게 .rotate_product > */
+.info_box{
+    max-width: 1320px;
+    margin-top: 80px;
+    width: 100%;
+    height: 267px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.info_box>.info_box1{
+    max-width: 252px;
+    height: 267px;
+    width: 24%;
+    /*색을 연하게 넣고 싶은데 너무 진함  */
+    box-shadow: 0px 4px 3px 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_box1 > a{
+    width: 200px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_box1 img{
+    width: 60px;
+    height: 60px;
+}
+.info_box1 div{
+    margin-top: 15px;
+    font-size: 24px;
+    color: #0569CD;
+    font-weight: bold;
+}
+.info_box1 p{
+    margin-top: 28px;
+    font-size: 16px;
+    color: #666;
+}
+footer{
+    max-width: 1920px;
+    width: calc(100vw - 18px);
+    margin: 150px auto 0;
+    background: #2f2f2f;
+}
+footer> .footer_wrap{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_wrap>.footer_left{
+    margin: 82px 0 0 25px;
+    width: 530px;
+    /* width: 493px; */
+    height: 223px;
+}
+.footer_left> .footer_top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footer_top>.footer_phone{
+    position: relative;
+}
+.footer_top>.footer_phone>p{
+    position: absolute;
+    top: 0;
+    left: -180px;
+    font-size: 16px;
+    width: 180px;
+    color: #fff;
+}
+.footer_top>.footer_phone>p>span{
+    display: block;
+    font-size: 36px;
+    width: 210px;
+    height: 40px;
+    font-weight: bold;
+}
+.footer_left>.copyright{
+    margin-top: 40px;
+}
+.footer_left>.copyright>address>p{
+    margin-top: 28px;
+    color: #aaa;
+}
+.footer_left>.copyright>address>p:nth-of-type(2){
+    color: #fff;
+    font-weight: bold;
+}
+
+
+footer .footer_right{
+    margin: 219px 12px 0 0;
+    display: flex;
+    gap: 10px;
+}
+footer .footer_right>a{
+    width: 60px;
+    height: 60px;
+    background: #aaa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_right>a>img{
+    width: 30px;
+    height: 30px;
+}
+
+/* @fix */
+.fix{
+    position: fixed;
+    top: 65%;
+    right: 58px;
+    width: 268px;
+    height: 251px;
+}
+.fix .chat{
+    position: absolute;
+    top: 0;
+    right: 42px;
+    z-index: 10;
+}
+.fix .consult{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 268px;
+    height: 71px;
+    background: #0469CD;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+
+    text-align: center;
+    line-height: 71px;
+}
+.fix .consult>span{
+    display: inline;
+}
+
+.fix .consult2{
+    position: absolute;
+    top: 115px;
+    right: 0;
+    width: 109px;
+    height: 84px;
+    background: #0469CD;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.consult2>span{
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.fix>.up{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fix>.up>img{
+    width: 40px;
+    height:40px
+}
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+    .desktop_box>ul>li>.sub>.flex_center>.pic>img:nth-of-type(2){
+        margin-top: 65px;
+        position: absolute;
+        top: 0;
+        left: 400px;
+        /* 427->400으로줄음 */
+    }
+}
+
+
+/* 태블릿 */
+@media screen and (max-width: 1024px){
+    .desk, .m{
+        display: none ;
+    }
+    .slide_banner > .innerbox1 > .banner_desk{
+        display: none;
+    }
+    .tablet{
+        display: block ;
+    }
+
+    header{
+        max-width: 1440px; 
+        width: 100%;
+        /* 반응형 하려면 이렇게 해야하는듯? */
+        height: 80px;
+        padding-top:8px;
+        background: #fff;
+    }
+    header> .innerbox{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    header>.innerbox>.top_logo{
+        width: 30%;
+        height: 48px;
+        box-sizing: border-box;
+        margin: 10px 0 0 10px;
+    }
+    header>.innerbox>.top_logo>h1>a{
+        display: block;
+        text-indent: -9999em;
+        /* 글자 왜 안날라감? -해결 block요소여야지만 */
+        background: url(../img/icon/header_logo.png) no-repeat;
+        background-size: contain;
+        /* 없가능 */
+    }
+    header>.innerbox>.top_nav{
+        width: 60%;
+        height: 19px;
+        margin-top: 21px;
+        /* margin-right: 40px; */
+    }
+
+    header>.innerbox>.right_box{
+        width: 10%;
+        display: flex;
+        justify-content: right;
+    }
+    header>.innerbox>.right_box>.top_nav_t{
+        display: none;
+        margin: 20px 20px 0 0;
+    }
+
+    
+     /* @button */
+    header>.innerbox>.right_box>button{
+        width: 30px;
+        height: 30px;
+        margin: 20px 10px 0 0;
+        background: url(../img/icon/button_Vector.svg)no-repeat;
+        background-size: contain;
+        top: 0;
+        right: 0;
+        display: block;/*임시  */
+    }
+    header>.innerbox>.right_box>button>#menu_wrap{
+        display: none;
+        max-width: 1440px;
+        width: 80vw;
+        height: 600px; 
+        z-index: 20;   
+        background: #999;
+    }
+    
+
+    
+    /* 슬라이드  @slide */
+    
+    .slide_banner {
+        position: relative;
+        max-width: 1440px;
+        width: 100%;
+        height: 630px;
+        margin: 0 auto;
+
+    }
+    
+    .slide_banner > .innerbox1 {
+        position: relative;
+        max-width: 1024px;
+        height: 630px;
+        overflow: hidden;
+    }
+    
+    .slide_banner > .innerbox1 > .banner_tablet {
+        width: calc(1024px * 5);
+        height: 630px;
+        display: flex;
+    }
+    
+    .slide_banner > .innerbox1 > .banner_tablet > a{
+        max-width: 1024px;
+        width: 100%;
+    }
+    .slide_banner > .innerbox1 > .banner_tablet > a > img {
+        width: 100%;
+        height: 630px;
+        object-fit: cover;
+        object-position: left;
+    }
+    /* .slide_banner > .innerbox1 > .banner_tablet > a > img:not(:nth-of-type(5)){
+        display: none;
+    }
+     */
+
+
+    
+    .slide_banner>.innerbox1>.btns{
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .slide_banner>.innerbox1>.btns>span{
+        margin-top: 8px;
+        font-size: 24px;
+    }
+    .slide_banner>.innerbox1>.btns>img{
+        width: 33.6px;
+        height: 38.4px;
+    }
+
+    .block_after{
+        display:block;  width:1920px;  height:1px;  background:#e4e4e4;
+        margin: 50px auto;
+    }
+
+    /* @rotate */
+    
+    .rotate_product{
+        max-width: 1440px;
+        width: 100%;
+        height: 530px;
+        margin: 94px auto 0;
+    /* 하위요소 중앙정렬 하는법*/
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }   
+    
+    /* 텍스트 부분 */
+    
+    /* @more_info 같이하게 .rotate_product > */.text{
+        display: inline-flex;
+        flex-flow: column;
+        /* 535px 왜 안댐? */
+        height: 124px; 
+    }
+    .text>h2{
+        font-size: 24px;
+        color: #1F2D5F;
+        text-align: center;
+    }
+    .text>p{
+        margin:13px auto 0;
+        font-size: 36px;
+        color: #090909;
+    }
+    .text>p>span{
+        color: #0469CD;
+        font-weight: bold;
+    }
+    /*  */
+    
+    
+        /* 진행된 부분 */
+    .rotate_product>.product_box{
+        max-width: 1024px;
+        width: 100%;
+        max-height: 273px;
+        height: auto;
+        margin-top: 85px;
+    }
+    
+    .rotate_product>.product_box>ul{
+        max-width: 1024px;
+        width: 100%;
+        height: 229px;
+        display: flex;
+    }
+    .rotate_product>.product_box>ul>li:not(:nth-child(1)){
+        display: none;
+        /* 임시 @스크립트로 */
+    }
+    
+    
+    .rotate_product>.product_box>ul>li{
+        max-width: 1212px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* pro_menu부분 */
+    .rotate_product>.product_box>.pro_menu{
+        width: 550px;
+        height: 22px;
+        margin-left: 102px;
+        margin-bottom: 17px;
+    }
+    .rotate_product>.product_box>.pro_menu>ul{
+        display: inline-flex;
+        gap: 10px;
+    }
+    .rotate_product>.product_box>.pro_menu>ul>li{
+        font-size: 16px;
+        padding-bottom: 5px;
+        border-left: 1px solid #ddd;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .rotate_product>.product_box>.pro_menu>ul>li:nth-of-type(1){
+        border-left: 0 none;
+    }
+    
+    .rotate_product>.product_box>.pro_menu>ul>li:hover::after{
+        content: "";
+        display: block;
+        width: 50%;
+        height: 1px;
+        background: #999;
+        margin: 1px auto;
+    }
+    
+    
+    /* @문제 너무 길어   */
+    
+    
+    /* ul 난이걸 중앙정렬하고싶음  flex를 유지하면서 했음 */
+    .rotate_product>.product_box>ul>li>ul>li{
+        width: 225px; 
+        height: 229px;
+        margin-right: 18px;
+    
+    }
+    .rotate_product>.product_box>ul>li>ul>li>a>img{
+        width: 225px;
+        height: 206px;
+    }
+    .rotate_product>.product_box>ul>li>ul>li>a>span{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    /* 버튼 */
+    .rotate_product>.product_box>.btns2{
+        max-width: 1024px;
+        width: 96vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: calc(-136.5px);
+    }
+    
+
+    
+    .rotate_product_m{
+        display: none;
+    }
+    /* @slide_flow */
+    .slide_flow{
+        margin: 0 2vw 0;
+        width: 100vw;
+        height: auto;
+        display: block;
+        display: flex;
+        flex-flow: column ;
+        justify-content: space-between;
+    }
+    .slide_flow>.text_wrap{
+        margin: 0px;
+        width: 611px;
+        height: 388px;
+        position: relative;
+    }
+    .slide_flow>.text_wrap>h2{
+        font-size: 28px;
+        font-weight: bold;
+        color: 111;
+    }
+    .slide_flow>.text_wrap>p:nth-of-type(1){
+        margin-top: 10px ;
+        font-size: 30px;
+        color: #0469CD;
+    }
+    .slide_flow>.text_wrap>p:nth-of-type(2){
+        margin-top: 50px;
+        font-size: 24px;
+        color: 111;
+    }
+    
+    
+    .slide_flow>.img_wrap{
+        /* margin: 0 1vw 0 ; */
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        flex-flow: row wrap;
+        gap: 1vw;
+    }
+    .slide_flow>.img_wrap>a{
+        width: auto;
+        height: auto;
+        margin: 0px;
+    
+    }
+    .slide_flow>.img_wrap>.one_line{
+        margin: 0px;
+    }
+    .slide_flow>.img_wrap>.one{
+        margin: 0px;
+    }
+    .slide_flow>.img_wrap>.four{
+        margin: 0px;
+    }
+    
+    .slide_flow>.img_wrap img{
+        width:47.5vw;
+        height: 31.5vw;
+        filter: saturate(90%);
+    }
+    
+    .slide_flow>.img_wrap>a>span{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+        z-index: 10;
+    
+    }
+    
+    /* 스킵... */
+    
+    /* @more_info 부터...합시다 */
+    .more_info{
+        max-width: 1320px;
+        width: calc(100%);
+        height: 689px;
+        margin: 108px auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /* more_info 같이하게 .rotate_product > */
+    .info_box{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 100%;
+        height: 544px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 20px;
+        
+    }
+    .info_box>.info_box1{
+        max-width: 252px;
+        height: 267px;
+        width: 48%;
+        /*색을 연하게 넣고 싶은데 너무 진함  */
+        box-shadow: 0px 4px 3px 0 rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_box1 > a{
+        width: 200px;
+        height: 172px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info_box1 img{
+        width: 60px;
+        height: 60px;
+    }
+    .info_box1 div{
+        margin-top: 15px;
+        font-size: 24px;
+        color: #0569CD;
+        font-weight: bold;
+    }
+    .info_box1 p{
+        margin-top: 28px;
+        font-size: 16px;
+        color: #666;
+    }
+     /* footer  */
+    footer{
+        width: calc(100vw);
+
+    }
+    
+    footer .footer_right{
+        position: absolute;
+        right: 0;
+        margin: 225px 12px 0 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    
+    /* @fix */
+    .fix{
+        position: fixed;
+        top: 65%;
+        right: 58px;
+        width: 268px;
+        height: 251px;
+        z-index: 35;
+    }
+    .fix .chat{
+        position: absolute;
+        top: 0;
+        right: 42px;
+        z-index: 10;
+    }
+    .fix .consult{
+        position: absolute;
+        top: 32px;
+        right: 0;
+        width: 268px;
+        height: 71px;
+        background: #0469CD;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 50px;
+    
+        text-align: center;
+        line-height: 71px;
+    }
+    
+    .fix .consult2{
+        position: absolute;
+        top: 115px;
+        right: 0;
+        width: 109px;
+        height: 84px;
+        background: #0469CD;
+        border-radius: 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .consult2>span{
+        color: #fff;
+        font-size: 18px;
+    
+    }
+    
+    .fix>.up{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border: 1px solid #111;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fix>.up>img{
+        width: 40px;
+        height:40px
+    }
+    
+
+    /* 야 근데 flex 걸린놈은 어떡하냐;
+
+    */
+    
+
+}
+
+
+/* 모바일 */
+
+@media screen and (max-width: 640px){
+    .desk, .tablet{
+        display: none;
+    }
+    .slide_banner > .innerbox1 > .banner_desk{
+        display: none;
+    }
+    .m{
+        display: block;
+    }
+    header{
+        max-width: 1440px; 
+        width: 100%;
+        /* 반응형 하려면 이렇게 해야하는듯? */
+        height: 80px;
+        padding-top:8px;
+        background: #fff;
+    }
+    header> .innerbox{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    header>.innerbox>.top_logo{
+        width: 50%;
+        height: 48px;
+        box-sizing: border-box;
+        margin: 10px 0 0 10px;
+    }
+    header>.innerbox>.top_logo>h1>a{
+        display: block;
+        text-indent: -9999em;
+        /* 글자 왜 안날라감? -해결 block요소여야지만 */
+        background: url(../img/icon/header_logo.png) no-repeat;
+        background-size: contain;
+        /* 없가능 */
+    }
+
+    header>.innerbox>.right_box{
+        width: 50%;
+        display: flex;
+        justify-content: right;
+    }
+    header>.innerbox>.right_box>.top_nav_t{
+        display: inline-flex;
+        margin: 20px 20px 0 0;
+
+    }
+    header>.innerbox>.right_box>.top_nav_t>a{
+        display: block;
+        text-indent: -9999em;
+        width: 30px;
+        height: 30px;
+        background: url(../img/icon/person_Vector.svg)no-repeat;
+        background-size: contain;
+    }
+    
+     /* @button */
+    header>.innerbox>.right_box>button{
+        width: 30px;
+        height: 30px;
+        margin: 20px 10px 0 0;
+        background: url(../img/icon/button_Vector.svg)no-repeat;
+        background-size: contain;
+        top: 0;
+        right: 0;
+        display: block;/*임시  */
+    }
+    header>.innerbox>.right_box>button>#menu_wrap{
+        display: none;
+        max-width: 1440px;
+        width: 80vw;
+        height: 600px; 
+        z-index: 20;   
+        background: #999;
+    }
+
+    /* 슬라이드 */
+    .slide_banner > .innerbox1 > .banner_tablet{ display: none;}
+
+    .slide_banner {
+        position: relative;
+        height: 90vw;
+        width: 100%;
+    }
+    
+    .slide_banner > .innerbox1 {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .slide_banner > .innerbox1 > .banner_mobile {
+        width: calc(100vw * 5);
+        height: auto;
+        display: flex;
+    }
+    .slide_banner > .innerbox1 > .banner_mobile > a{
+        max-width: 1440px;
+        width: 100%;
+    }
+    .slide_banner > .innerbox1 > .banner_mobile > a > img {
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    /* .slide_banner > .innerbox1 > .banner_tablet > a > img:not(:nth-of-type(5)){
+        display: none;
+    }
+     */
+        
+    
+    .slide_banner>.innerbox1>.btns{
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .slide_banner>.innerbox1>.btns span{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .slide_banner>.innerbox1>.btns img{
+        width: 21px;
+        height: 24px;
+    }
+    /* 진행된 부분 */
+    .rotate_product_m{
+        max-width: 1320px;
+        width: calc(100%);
+        height: auto;
+        /* margin: min(12vw, px) auto 0; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .rotate_product_m .text{height: 60px;}
+    
+    .rotate_wrap>a{
+        display: block;
+        width: 90vw;
+        margin: 10px 0 0 5vw ;
+        height: 80px;
+        background: #0569CD;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .rotate_wrap>a>img{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    .rotate_wrap>a>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 35px;
+    }
+    .rotate_wrap>a>div>span{
+        margin-left: 15px;
+        font-size: 20px;
+        color: #fff;
+    }
+    /* @slide_flow */
+    .slide_flow{
+        /* margin: 0px auto 0; */
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .slide_flow>.text_wrap{
+        margin: 0px 0px 30px;
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+    .slide_flow>.text_wrap>h2{
+        font-size: max(4vw, 20px);
+        font-weight: bold;
+        color: 111;
+    }
+    .slide_flow>.text_wrap>p:nth-of-type(1){
+        margin-top: 10px ;
+        font-size: max(3vw, 16px);
+        color: #0469CD;
+    }
+    .slide_flow>.text_wrap>p:nth-of-type(2){
+        margin-top: 20px;
+        font-size: max(3vw, 16px);
+        color: 111;
+    }
+
+    .slide_flow>.img_wrap>a>span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: max(4vw, 16px);
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+        z-index: 10;
+    
+    }
+
+
+
+    /* 스킵... */
+    
+        /* @more_info 같이하게 .rotate_product > */.text{
+            display: inline-flex;
+            flex-flow: column;
+            /* 535px 왜 안댐? */
+            height: 124px; 
+        }
+        .text>h2{
+            font-size: max(3vw, 14px);
+            color: #1F2D5F;
+            text-align: center;
+        }
+        .text>p{
+            margin:13px auto 0;
+            font-size: max(5vw, 20px);
+            color: #090909;
+        }
+        .text>p>span{
+            color: #0469CD;
+            font-weight: bold;
+        }
+    /* @more_info 부터...합시다 */
+    .more_info{
+        max-width: 1320px;
+        width: calc(100%);
+        height: calc(100vw + 100px);
+        /* margin: min(12vw, px) auto 0; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .info_box{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top :min(10vw, 40px);
+        width: 100%;
+        height: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 2%;
+        
+    }
+    .info_box>.info_box1{
+        max-width: 252px;
+        max-height: 267px;
+        height: 50vw;
+        width: 48%;
+        /*색을 연하게 넣고 싶은데 너무 진함  */
+        box-shadow: 0px 4px 3px 0 rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_box1 > a{
+        width: 200px;
+        height: 172px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info_box1 img{
+        width: 60px;
+        height: 60px;
+    }
+    .info_box1 div{
+        margin-top: 15px;
+        font-size: 20px;
+        color: #0569CD;
+        font-weight: bold;
+    }
+
+    /* footer  */
+    footer{
+        height: 320px;
+        margin: 0;
+    }
+    footer> .footer_wrap{
+        height: auto;
+
+    }
+    .footer_wrap>.footer_left{
+        margin: 10vw 10px 0 25px;
+        width: calc(100vw - 43px);
+        /* width: 493px; */
+        height: 223px;
+    }
+    .footer_left> .footer_top{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .footer_top>.footer_phone{
+        position: static;
+    }
+    .footer_top>.footer_phone>p{
+        position: static;
+        font-size: 16px;
+        width: auto;
+        color: #fff;
+    }
+    .footer_top>.footer_phone>p>span{
+        display: block;
+        font-size : min( 6vw,36px);
+        width: auto;
+        height: 40px;
+        font-weight: bold;
+    }
+
+    .footer_left>.copyright>address>p{
+        text-align: center;
+    }
+    
+    footer .footer_right{
+        display: none;
+    }
+    .fix_m{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 40px;
+        background-color: #0469CD;
+    } 
+    .fix_m_wrap{
+        display: flex;
+        flex-flow: row wrap;
+        height: 100%;
+        width: 100%;
+    }
+    .fix_m_wrap >a{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .fix_m_wrap >a>div{
+        line-height: 40px;
+        color: #fff;
+    }
+    .fix_m_wrap>.aa img{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+    /* .fix_m_wrap > .up{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -40px;
+        right: 0;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background: #;
+    } */
+
+    .fix_m_wrap .up{
+        position: absolute;
+        top: -30px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border: 1px solid #111;
+        box-sizing: border-box;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fix_m_wrap>.up>img{
+        width: 30px;
+        height:30px
+    }
+
+    /* 다신울지않을래 모진 시련 앞에도 나언제나 당당히 웃을 수 있게
+    아픈이멸에 눈물에 다람쥐ㅏ 헌체바퀴에 불났어 whta... */
+
+}
+
+
+
+@media screen and (max-width: 1290px) and (min-width: 1041px) {
+    .rotate_product>.product_box>ul>li{
+        max-width: 972px; 
+    }
+}
+@media screen and (max-width: 1040px) and (min-width: 820px) {
+    .rotate_product>.product_box>ul>li{
+        max-width: 729px; 
+    }
+}
+@media screen and (max-width: 819px) and (min-width: 641px) {
+    .rotate_product>.product_box>ul>li{
+        max-width: 486px; 
+    }
+}
+/* 
+.fixedd {  width: 100vw; height: 100vh; margin: 0; padding: 0; position: fixed; left: 0; top: 0;} */
+
+@media screen and (min-width: 1024px) {
+    .slide_flow{
+        /* 지울꺼 */
+        position: relative;
+        transition: left 1s ease-in-out ;
+
+        margin: 104px auto 0;
+        max-width: 1920px;
+        width: 100vw;
+
+        height: 920px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .slide_flow>.text_wrap{
+        margin: 223px 0 0 37px;
+        max-width: 611px;
+        width: 33%;
+        height: 388px;
+        position: relative;
+    }
+    .slide_flow>.text_wrap>h2{
+        font-size: 28px;
+        font-weight: bold;
+        color: 111;
+    }
+    .slide_flow>.text_wrap>p:nth-of-type(1){
+        margin-top: 10px ;
+        font-size: 64px;
+        color: #0469CD;
+    }
+    .slide_flow>.text_wrap>p:nth-of-type(2){
+        margin-top: 50px;
+        font-size: 24px;
+        color: 111;
+    }
+    .slide_flow>.img_wrap{
+        max-width: 1200px;
+        width: 66%;
+        height: 832px;
+        display: inline-flex;
+        flex-flow: row wrap;
+    }
+    .slide_flow>.img_wrap>a{
+        height: 300px;
+        width: 45%;
+        margin: 10px;
+        position: relative;
+        /* margin: 100px 0 0 200px; */
+        overflow: hidden;
+        filter: grayscale();
+    }
+    .slide_flow>.img_wrap>a:hover{
+        filter: none;
+        width: calc(45% + 20px);
+        height: 320px;
+        margin: 0;
+    }
+
+    /* .slide_flow>.img_wrap>.one_line{
+        margin: 0 0 0 200px;
+    }
+    .slide_flow>.img_wrap>.one{
+        margin: 0 0 0 0px;
+    }
+    .slide_flow>.img_wrap>.four{
+        margin: 100px 0 0 400px;
+    } */
+    
+    .slide_flow > .img_wrap  img {
+        height: 300px;
+        width: 450px;
+        object-fit: cover;
+    }
+    
+    
+    .slide_flow>.img_wrap>a>span{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+        z-index: 10;
+    
+    }
+}
